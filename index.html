@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider with Dark/Light Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Beautiful Image Gallery with Light & Dark Mode</h1>
+    <p>
+      Welcome to this interactive image slider. You can browse through the gallery using the buttons below.
+      Switch between light and dark mode for a different feel, and even adjust the brightness intensity
+      to your liking using the + and – controls.
+    </p>
+  </header>
+
+  <!-- Toggle & Brightness Controls -->
+  <div class="controls">
+    <button id="toggleMode">🌙 Dark / ☀️ Light</button>
+    <div class="brightness-control">
+      <span>Brightness:</span>
+      <button id="decreaseBrightness">–</button>
+      <span id="brightnessLevel">100%</span>
+      <button id="increaseBrightness">+</button>
+    </div>
+  </div>
+
+  <!-- Image Slider Container -->
+  <div class="slider-container">
+    <button class="nav-btn" id="prevOne">⟨</button>
+    <button class="nav-btn triple" id="prevThree">⟪</button>
+
+    <div class="slider">
+      <div class="slider-track">
+        <!-- 9+ images -->
+        <img src="https://picsum.photos/id/1015/600/400" alt="Pic 1">
+        <img src="https://picsum.photos/id/1016/600/400" alt="Pic 2">
+        <img src="https://picsum.photos/id/1018/600/400" alt="Pic 3">
+        <img src="https://picsum.photos/id/1020/600/400" alt="Pic 4">
+        <img src="https://picsum.photos/id/1024/600/400" alt="Pic 5">
+        <img src="https://picsum.photos/id/1025/600/400" alt="Pic 6">
+        <img src="https://picsum.photos/id/1027/600/400" alt="Pic 7">
+        <img src="https://picsum.photos/id/1031/600/400" alt="Pic 8">
+        <img src="https://picsum.photos/id/1035/600/400" alt="Pic 9">
+      </div>
+    </div>
+
+    <button class="nav-btn triple" id="nextThree">⟫</button>
+    <button class="nav-btn" id="nextOne">⟩</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
